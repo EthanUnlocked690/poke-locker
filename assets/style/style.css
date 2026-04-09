@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Bangers";
+  src: local("style/Bangers-Regular.ttf");
+}
+
+body{
+  background: "./images/poke-background.png"
+  text-align: center;
+}
+
+div{
+  margin: 20px;
+}
+
+h1{
+  font-family: "Bangers";
+  color: #0000FF;
+}
+
+h2{
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Bangers";
+  margin: 0;
+}
+
+#btnLoadProfile, #btnSaveData {
+  margin: 1em;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #008000;
+  text-shadow: 0px 0px 0px #000;
+  border-radius: 10px;
+  background-image: "./images/poke-background.png";
