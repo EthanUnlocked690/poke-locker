@@ -99,7 +99,22 @@
       <button onclick="saveOutfit()" class="save-btn">💾 Save to Pokémon GO</button>
       <button onclick="resetOutfit()" class="reset-btn">🔄 Reset All</button>
     </div>
-
+<!-- CENTER PREVIEW - Updated for animations -->
+<div class="preview-area">
+  <h2 id="trainerName">Your Pokémon GO Trainer</h2>
+  <div id="trainerPreview" class="trainer-preview">
+    <!-- Animated pose GIF will go here -->
+    <img id="poseImage" src="./images/poses/stand.png" alt="Trainer Pose" class="base-pose">
+    
+    <!-- Clothing layers stay on top (static for now, can be animated later) -->
+    <div id="hatLayer" class="outfit-layer"></div>
+    <div id="shirtLayer" class="outfit-layer"></div>
+    <div id="jacketLayer" class="outfit-layer"></div>
+    <div id="pantsLayer" class="outfit-layer"></div>
+    <div id="shoesLayer" class="outfit-layer"></div>
+    <div id="accessoryLayer" class="outfit-layer"></div>
+  </div>
+</div>
   </div>
 </div>
     <script src="./assets/script/script.js"></script>
