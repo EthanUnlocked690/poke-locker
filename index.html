@@ -7,3 +7,18 @@
   <link rel="stylesheet" href="./assets/style/style.css">
   <link rel="icon" type="image/x-icon" href="./assets/poke-locker.ico">
   <h1>Design your Pokemon GO skin here!</h1>
+  <body>
+
+    <!-- Top Right Button Container -->
+    <div class="top-right-container">
+        <button id="pokeLinkBtn" onclick="linkPokemonAccount()">
+            <img id="pokeImg" src="pokemon-go.png" alt="Link Pokemon GO" class="poke-icon">
+        </button>
+    </div>
+
+    <!-- Hidden Message Popup -->
+    <div id="confirmationPopup" class="popup hidden">
+        <p>Pokemon GO account linked!</p>
+    </div>
+
+    <script src="script.js"></script>
