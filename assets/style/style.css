@@ -33,3 +33,93 @@ h2{
   text-shadow: 0px 0px 0px #000;
   border-radius: 10px;
   background-image: "./images/poke-background.png";
+/* ADD THESE STYLES to your style.css (or replace the old #lockerContainer styles) */
+
+.trainer-preview-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.trainer-preview {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.1);
+  border: 8px solid #FFCB05;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(255, 203, 5, 0.5);
+}
+
+.base-layer,
+.outfit-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.slot {
+  margin-bottom: 30px;
+  background: rgba(59, 76, 202, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.slot h4 {
+  color: #FFCB05;
+  margin-bottom: 12px;
+  font-family: "Bangers", sans-serif;
+}
+
+.items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.items-grid .item {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 12px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 3px solid transparent;
+}
+
+.items-grid .item:hover {
+  transform: scale(1.1);
+  border-color: #FFCB05;
+}
+
+.items-grid .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.random-btn, .save-btn, .reset-btn {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.random-btn { background: #FFCB05; color: #3B4CCA; }
+.save-btn   { background: #008000; color: white; }
+.reset-btn  { background: #FF0000; color: white; }
