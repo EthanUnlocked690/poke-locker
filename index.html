@@ -20,5 +20,86 @@
     <div id="confirmationPopup" class="popup hidden">
         <p>Pokemon GO account linked!</p>
     </div>
+<!-- ADD THIS ENTIRE BLOCK RIGHT BEFORE YOUR </body> tag (or wherever you want the locker to appear) -->
+<div id="lockerContainer" class="hidden">
 
+  <!-- TRAINER PREVIEW AREA -->
+  <div class="trainer-preview-container">
+    <h2 id="trainerName">Your Pokémon GO Trainer</h2>
+    <div id="trainerPreview" class="trainer-preview">
+      <!-- Your outfit will be generated here (layered images, canvas, or single img) -->
+      <img id="baseTrainer" src="./images/default-trainer.png" alt="Base Trainer" class="base-layer">
+      
+      <!-- Empty layered divs for your outfit pieces (you can dynamically add/remove images here) -->
+      <div id="hatLayer" class="outfit-layer"></div>
+      <div id="shirtLayer" class="outfit-layer"></div>
+      <div id="jacketLayer" class="outfit-layer"></div>
+      <div id="pantsLayer" class="outfit-layer"></div>
+      <div id="shoesLayer" class="outfit-layer"></div>
+      <div id="accessoryLayer" class="outfit-layer"></div>
+    </div>
+  </div>
+
+  <!-- CUSTOMIZATION PANEL (using clean divs for each category) -->
+  <div class="customization-panel">
+
+    <h3>Customize Your Outfit</h3>
+
+    <!-- HAT / HEAD SLOT -->
+    <div class="slot" id="hatSlot">
+      <h4>🎩 Headwear</h4>
+      <div id="hatOptions" class="items-grid">
+        <!-- Your JS will populate this with clickable divs for each hat -->
+      </div>
+    </div>
+
+    <!-- SHIRT / TORSO SLOT -->
+    <div class="slot" id="shirtSlot">
+      <h4>👕 Shirt / Top</h4>
+      <div id="shirtOptions" class="items-grid">
+        <!-- Your JS will populate this with clickable divs for each shirt -->
+      </div>
+    </div>
+
+    <!-- JACKET / OUTER SLOT -->
+    <div class="slot" id="jacketSlot">
+      <h4>🧥 Jacket / Outer Layer</h4>
+      <div id="jacketOptions" class="items-grid">
+        <!-- Your JS will populate this with clickable divs for each jacket -->
+      </div>
+    </div>
+
+    <!-- PANTS / LEGS SLOT -->
+    <div class="slot" id="pantsSlot">
+      <h4>👖 Pants / Bottoms</h4>
+      <div id="pantsOptions" class="items-grid">
+        <!-- Your JS will populate this with clickable divs for each pants -->
+      </div>
+    </div>
+
+    <!-- SHOES SLOT -->
+    <div class="slot" id="shoesSlot">
+      <h4>👟 Shoes</h4>
+      <div id="shoesOptions" class="items-grid">
+        <!-- Your JS will populate this with clickable divs for each shoes -->
+      </div>
+    </div>
+
+    <!-- ACCESSORIES SLOT -->
+    <div class="slot" id="accessorySlot">
+      <h4>👜 Accessories</h4>
+      <div id="accessoryOptions" class="items-grid">
+        <!-- Your JS will populate this with clickable divs for each accessory -->
+      </div>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="action-buttons">
+      <button onclick="randomizeOutfit()" class="random-btn">🎲 Randomize Full Outfit</button>
+      <button onclick="saveOutfit()" class="save-btn">💾 Save to Pokémon GO</button>
+      <button onclick="resetOutfit()" class="reset-btn">🔄 Reset All</button>
+    </div>
+
+  </div>
+</div>
     <script src="./assets/script/script.js"></script>
